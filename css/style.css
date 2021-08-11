@@ -1,9 +1,40 @@
 html, body {
   margin: 0;
-  padding: 0;
+  padding: 20px;
+  color: #fff;
+  font-family: forma-djr-text, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-feature-settings: "salt"
 }
 canvas {
   display: block;
+}
+section {
+  margin-left: 135px;
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  grid-template-areas: "a a a b"
+                       "c d e f";
+}
+
+div{
+  grid-area: a;
+  font-size: 30px;
+}
+
+p{
+  grid-area: c;
+}
+
+ul{
+  grid-area: d;
+}
+
+#logo{
+  height: 102px;
 }
 
 .hideall {
